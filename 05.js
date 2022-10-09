@@ -14,7 +14,12 @@ function agregaPropiedad(amigos, propiedad) {
   // Ej:
   // var amigos = [{ nombre: 'toni' } , { nombre: 'Emi', edad: 25 }];
   // agregaPropiedad(amigos, 'edad') debe devolver [{ nombre: 'toni', edad: null } , { nombre: 'Emi', edad: 25 }]
-
+  amigos.forEach(function(amigo){
+    if (!amigo.hasOwnProperty(propiedad)){
+      amigo[propiedad] = null
+ }
+})
+return amigos;
 }
 
 // No modifiques nada debajo de esta linea //
