@@ -19,7 +19,6 @@ function sumArray(array, n) {
   // por lo tanto también debería devolver false en este caso
 
   // Tu código aca:
-  return array.some(numero => array.filter(n => n != numero).includes(n-numero))
 }
 
 // No modifiques nada debajo de esta linea //
